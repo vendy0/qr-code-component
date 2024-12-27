@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+@font-face {
+	font-family: 'outfit';
+	src: url(./assets/fonts/Outfit-VariableFont_wght.ttf) format(truetype);
+	font-weight: 100 900;
+	font-style: normal;
+}
+
+body {
+	font-family: 'outfit', sans-serif;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: hsl(212, 45%, 89%);
+	position: relative;
+}
+
+.card {
+	box-shadow: 10px 10px 20px rgb(0 0 0 / 10%);
+	background: hsl(0, 0%, 100%);
+	border-radius: 20px;
+	max-width: 280px;
+	margin: 0;
+	padding: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.info {
+	padding: 10px 5px;
+}
+
+img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+h1 {
+	font-size: 1.2em;
+	color: hsl(218, 44%, 22%);
+}
+
+p {
+	font-weight: 400;
+	font-size: 15px;
+	color: hsl(216, 15%, 48%);
+}
+
+.attribution {
+	display: block;
+	width: 100%;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 20px;
+	position: absolute;
+	font-size: 11px;
+	text-align: center;
+	bottom: 0;
+	background: linear-gradient(to top, #00000080, transparent);
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+	text-decoration: none;
+}
